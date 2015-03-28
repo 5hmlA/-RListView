@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/footcontainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/footview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dp"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" >
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/up" />
+
+                <ProgressBar
+                    android:id="@+id/progerssbar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:indeterminateDrawable="@drawable/myprogressbar"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="下拉刷新"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/updated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="2dp"
+                android:text="下拉刷新"
+                android:textColor="#90000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
