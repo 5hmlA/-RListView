@@ -1,7 +1,8 @@
 # -RListView
-下拉刷新功能，上拉加载功能，两个功能的开关
+下拉刷新功能，上拉加载功能，两个功能的开关 顶部和底部可以添加任何布局
 
 ![](http://i.imgur.com/3vvMKdy.gif)
+![](http://i.imgur.com/GVR9dVz.gif)
 
  * 上拉加载 下拉刷新 listview  具备添加任意控件  到 头部或底部容器(线性 默认竖直方向)
  * 
